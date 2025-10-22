@@ -1,0 +1,7 @@
+# Model Comparison — Store 1 Weekly Sales Forecast
+Model	MAE (Mean Absolute Error)	MAPE (%)	Performance Summary
+Naive Forecast	106,663	6.64	Baseline — predicts next week = last week
+Moving Average (4 weeks)	106,082	6.60	Slightly smoother than naive; still simple
+ARIMA	111,887	6.92	Captures short-term trend, but not strong seasonality here
+Multiple Linear Regression	117,981	7.07	Linear fit; struggles with time patterns
+Prophet (Best)	76,179	4.80	✅ Best overall — learns trend, seasonality, and holidays

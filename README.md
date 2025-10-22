@@ -1,49 +1,19 @@
-# Walmart Weekly Sales Forecasting
-
-# Project Overview
-This project forecasts weekly sales for 45 Walmart stores using historical sales and economic indicators. Accurate demand forecasting helps reduce stockouts, avoid overstock, and support inventory planning.
-
-# Dataset
-Columns used:
-Store, Date, Weekly_Sales, Holiday_Flag, Temperature, Fuel_Price, CPI, Unemployment
-
+# Project: Store-Level Demand Forecasting for Walmart
+# Objective
+The primary objective of this project is to develop an accurate weekly sales forecast for a single Walmart store. In retail, inaccurate demand forecasting leads to significant operational challenges. Stockouts result in lost sales and decreased customer satisfaction, while overstocking ties up capital in unsold inventory, increases storage costs, and can lead to markdowns that erode profit margins.
+This project addresses this challenge by building and comparing several forecasting models. The goal is to identify a model that provides a more reliable prediction than a simple baseline, enabling smarter inventory planning and supporting the key business goals of cost reduction and improved profitability.
 # Methodology
-
-Data Preprocessing & EDA: Handled missing values, created lag/rolling features, added holiday indicators.
-
-Models Tested: Naive Forecast, Moving Average, ARIMA, Multiple Linear Regression, Prophet.
-
-Evaluation: Walk-forward validation using MAE and MAPE.
-
-# Model Comparison — Store 1
-
-Model	MAE	MAPE (%)	Summary
-Naive	106,663	6.64	Baseline
-Moving Average	106,082	6.60	Slight improvement
-ARIMA	111,887	6.92	Captures short-term trends
-Linear Regression	117,981	7.07	Struggles with seasonality
-Prophet	76,179	4.80	 Best — captures trend, seasonality & holidays
-
-# Key Insights
-
-Prophet significantly outperforms other models, effectively capturing seasonal and holiday effects.
-
-Weekly sales are influenced by store-specific trends, holidays, and economic indicators.
-
+Five distinct time-series forecasting models were developed and compared to find the most accurate approach:
+Naive Forecast (Baseline)
+Moving Average
+ARIMA
+Multiple Linear Regression
+Prophet
+Each model's performance was rigorously evaluated using walk-forward validation. The primary metrics for comparing accuracy were Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE).
+# Key Result & Business Takeaway
+The Prophet model proved to be the most effective, significantly outperforming all other models tested. It reduced the forecast error (MAPE) by over 27% compared to the naive baseline.
+This result demonstrates that implementing a sophisticated model like Prophet can dramatically enhance forecasting precision. Adopting this model for weekly planning would lead to more effective inventory management, reducing the financial impact of both stockouts and overstock and thereby improving the store's bottom line.
 # Tools & Technologies
-Python (pandas, scikit-learn, statsmodels, Prophet), matplotlib, plotly, Git
-
-# Deliverables
-
-Reproducible Google coolab notebook 
-
-Forecast comparison CSV
-
-Visualizations of actual vs predicted sales
-
-Future Work
-
-Explore hierarchical forecasting (store & SKU level)
-
-Incorporate additional external factors (weather, promotions, macroeconomic indicators)
-
+Languages: Python
+Libraries: pandas, scikit-learn, statsmodels, Prophet , matplotlib 
+Visualization: matplotlib, plotly

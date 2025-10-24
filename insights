@@ -1,7 +1,15 @@
-# Model Comparison — Store 1 Weekly Sales Forecast
-Model	MAE (Mean Absolute Error)	MAPE (%)	Performance Summary
-Naive Forecast	106,663	6.64	Baseline — predicts next week = last week
-Moving Average (4 weeks)	106,082	6.60	Slightly smoother than naive; still simple
-ARIMA	111,887	6.92	Captures short-term trend, but not strong seasonality here
-Multiple Linear Regression	117,981	7.07	Linear fit; struggles with time patterns
-Prophet (Best)	76,179	4.80	✅ Best overall — learns trend, seasonality, and holidays
+# Business Insights
+
+The Prophet model proved to be the most effective forecasting method, clearly outperforming all other models tested. It reduced the forecast error (MAPE) by over 27% compared to the naive baseline.
+
+This improvement means the Prophet model can predict weekly store sales much more accurately. As a result, Walmart can:
+
+Plan inventory more efficiently, reducing both stockouts and overstock.
+
+Lower operational costs by minimizing excess inventory and lost sales.
+
+Support data-driven decisions for promotions and weekly planning.
+
+# In summary, 
+
+adopting Prophet for weekly demand forecasting would enhance inventory management and improve overall profitability.

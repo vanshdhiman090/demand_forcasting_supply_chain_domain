@@ -1,15 +1,9 @@
-# Business Insights
+Business Insights
 
 The Prophet model proved to be the most effective forecasting method, clearly outperforming all other models tested. It reduced the forecast error (MAPE) by over 27% compared to the naive baseline.
-
 This improvement means the Prophet model can predict weekly store sales much more accurately. As a result, Walmart can:
-
 Plan inventory more efficiently, reducing both stockouts and overstock.
-
 Lower operational costs by minimizing excess inventory and lost sales.
-
 Support data-driven decisions for promotions and weekly planning.
 
-# In summary, 
-
-adopting Prophet for weekly demand forecasting would enhance inventory management and improve overall profitability.
+In summary, adopting Prophet for weekly demand forecasting would enhance inventory management and improve overall profitability.

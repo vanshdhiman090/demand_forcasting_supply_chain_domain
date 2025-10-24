@@ -1,9 +1,16 @@
-Business Insights
+Business Insights (from analysis)
 
-The Prophet model proved to be the most effective forecasting method, clearly outperforming all other models tested. It reduced the forecast error (MAPE) by over 27% compared to the naive baseline.
-This improvement means the Prophet model can predict weekly store sales much more accurately. As a result, Walmart can:
-Plan inventory more efficiently, reducing both stockouts and overstock.
-Lower operational costs by minimizing excess inventory and lost sales.
-Support data-driven decisions for promotions and weekly planning.
+The Prophet model delivered the most accurate forecasts, reducing MAPE by over 27% compared to the naive baseline.
+Seasonal trends and holiday effects play a major role in weekly sales, and Prophet captured them effectively.
+Better forecasts lead to smarter inventory planning, helping reduce both stockouts and excess inventory.
+Adopting Prophet for weekly forecasting can improve profitability and operational efficiency across Walmart stores.
 
 In summary, adopting Prophet for weekly demand forecasting would enhance inventory management and improve overall profitability.
+
+| Model                      | MAE (Mean Absolute Error) | MAPE (%) | Summary                                             |
+| -------------------------- | ------------------------- | -------- | --------------------------------------------------- |
+| Naive Forecast             | 106,663                   | 6.64     | Baseline — predicts next week = last week           |
+| Moving Average (4 weeks)   | 106,083                   | 6.60     | Slightly smoother than naive; still simple          |
+| ARIMA                      | 111,887                   | 6.92     | Captures short-term trends, but limited seasonality |
+| Multiple Linear Regression | 117,981                   | 7.07     | Struggles with time patterns and non-linearity      |
+| Prophet (Best)             | 76,179                    | 4.80     | Best — captures trend, seasonality, and holidays    |

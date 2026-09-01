@@ -1,19 +1,61 @@
-# Project: Store-Level Demand Forecasting for Walmart
-# Objective
-The primary objective of this project is to develop an accurate weekly sales forecast for a single Walmart store. In retail, inaccurate demand forecasting leads to significant operational challenges. Stockouts result in lost sales and decreased customer satisfaction, while overstocking ties up capital in unsold inventory, increases storage costs, and can lead to markdowns that erode profit margins.
-This project addresses this challenge by building and comparing several forecasting models. The goal is to identify a model that provides a more reliable prediction than a simple baseline, enabling smarter inventory planning and supporting the key business goals of cost reduction and improved profitability.
-# Methodology
-Five distinct time-series forecasting models were developed and compared to find the most accurate approach:
-Naive Forecast (Baseline)
-Moving Average
-ARIMA
-Multiple Linear Regression
-Prophet
-Each model's performance was rigorously evaluated using walk-forward validation. The primary metrics for comparing accuracy were Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE).
-# Key Result & Business Takeaway
-The Prophet model proved to be the most effective, significantly outperforming all other models tested. It reduced the forecast error (MAPE) by over 27% compared to the naive baseline.
-This result demonstrates that implementing a sophisticated model like Prophet can dramatically enhance forecasting precision. Adopting this model for weekly planning would lead to more effective inventory management, reducing the financial impact of both stockouts and overstock and thereby improving the store's bottom line.
-# Tools & Technologies
-Languages: Python
-Libraries: pandas, scikit-learn, statsmodels, Prophet , matplotlib 
-Visualization: matplotlib, plotly
+# Store-Level Demand Forecasting for Walmart
+
+A time-series forecasting project focused on improving weekly retail sales predictions for inventory and planning decisions.
+
+## Business Problem
+
+Retail teams need reliable demand forecasts to balance two competing risks:
+
+- **Stockouts**, which can lead to lost sales and poor customer experience
+- **Overstock**, which ties up working capital and increases storage and markdown risk
+
+This project compares several forecasting approaches to determine which model performs best against a simple baseline.
+
+## Approach
+
+Five forecasting methods were evaluated:
+
+1. Naive forecast — baseline
+2. Moving Average
+3. ARIMA
+4. Multiple Linear Regression
+5. Prophet
+
+Model performance was assessed using **walk-forward validation**, with **MAE** and **MAPE** used as the primary evaluation metrics.
+
+## Key Result
+
+The documented analysis found that **Prophet produced the strongest forecast and reduced MAPE by more than 27% compared with the naive baseline**.
+
+This demonstrates why model comparison against a simple baseline matters: a more sophisticated forecasting method is only useful when it produces a measurable improvement on unseen periods.
+
+## Business Relevance
+
+More accurate weekly forecasts can support:
+
+- inventory planning
+- replenishment decisions
+- stockout and overstock risk management
+- operational planning
+
+The project is a portfolio analysis rather than a production forecasting system, so the reported result should be interpreted within the dataset and validation setup used here.
+
+## Tech Stack
+
+- **Python**
+- **pandas**
+- **scikit-learn**
+- **statsmodels**
+- **Prophet**
+- **Matplotlib**
+- **Plotly**
+
+## Repository Contents
+
+- [`demend_forcasting.ipynb`](demend_forcasting.ipynb) — analysis and model comparison notebook
+- [`Key insights`](Key%20insights) — written findings
+- `Walmart_sales_dataset` — dataset used in the analysis
+
+## Skills Demonstrated
+
+Time-series analysis · Forecast evaluation · Walk-forward validation · Model comparison · Business interpretation · Python analytics
